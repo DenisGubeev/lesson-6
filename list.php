@@ -15,7 +15,7 @@
             <div>
                 <h1><?php echo str_replace('tests/', '', $file); ?></h1><br>
                 <em>Загружен: <?php echo date("d-m-Y", filemtime($file)) ?></em><br>
-                <a href="test.php?number=<?php echo array_search($file, $allFiles); ?>">Перейти на страницу с тестом ></a>
+                <a href="test.php?number=<?php echo array_search($file, $allFiles); ?>"Перейти на страницу с тестом ></a>
             </div>
         <?php endforeach; ?>
     <?php endif; ?>
