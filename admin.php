@@ -23,8 +23,6 @@ $uploadfile = '/' . basename($_FILES['myfile']['name']);
     <?php echo $result; ?>
     <h1>Служебная информация:</h1>
     <pre>
-        <?php print_r($allFiles); ?>
-        <hr>
         <?php print_r($_FILES); ?>
     </pre>
 <?php endif; ?>
