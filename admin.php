@@ -2,7 +2,7 @@
 if (isset($_FILES['myfile'])) {
     $file = $_FILES['myfile'];
 }
-$uploadfile = '/' . basename($_FILES['myfile']['name']);
+$uploadfile = 'tests/' . basename($_FILES['myfile']['name']);
  if (!empty($file['name']) && $file['error'] == UPLOAD_ERR_OK && 
  move_uploaded_file($file['tmp_name'], $uploadfile)) {
     echo 'Файл загружен';
