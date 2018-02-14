@@ -20,7 +20,7 @@ if (isset($_FILES['myfile'])) {
 <body>
 
 <?php if (isset($_POST['upload'])): ?>
-    <a href="<?php $_SERVER['HTTP_REFERER'] ?>"><div>< Назад</div></a>
+    <a href="<?php $_SERVER['HTTP_REFERER'] ?>"><div>Назад</div></a>
     <?php echo $result; ?>
     <h1>Служебная информация:</h1>
     <pre>
