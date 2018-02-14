@@ -17,14 +17,6 @@ $uploadfile = 'tests/' . basename($_FILES['myfile']['name']);
     <title>Admin</title>
 </head>
 <body>
-
-<?php if (isset($_POST['myfile'])): ?>
-    <h1>Информация:</h1>
-    <pre>
-        <?php print_r($_FILES); ?>
-    </pre>
-<?php endif; ?>
-
     <form  method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Загрузите свой тест в формате json</legend>
@@ -32,7 +24,12 @@ $uploadfile = 'tests/' . basename($_FILES['myfile']['name']);
             <input type="submit" value="Добавить в базу" name="myfile">
         </fieldset>
     </form>
-
+    <?php if (isset($_POST['myfile'])): ?>
+    <h1>Информация:</h1>
+    <pre>
+        <?php print_r($_FILES); ?>
+    </pre>
+<?php endif; ?>
     <div>
         <fieldset>
             <a href="list.php">Посмотреть все тесты >></a>
