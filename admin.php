@@ -21,10 +21,10 @@ $uploadfile = 'tests/' . basename($_FILES['myfile']['name']);
         <fieldset>
             <legend>Загрузите свой тест в формате json</legend>
             <input type="file" name="testfile" required>
-            <input type="submit" value="Добавить в базу" name="myfile">
+            <input type="submit" value="Добавить в базу" name="upload">
         </fieldset>
     </form>
-    <?php if (isset($_POST['myfile'])): ?>
+    <?php if (isset($_POST['upload'])): ?>
     <h1>Информация:</h1>
     <pre>
         <?php print_r($_FILES); ?>
