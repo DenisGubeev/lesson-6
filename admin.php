@@ -19,8 +19,6 @@ $uploadfile = 'tests/' . basename($_FILES['myfile']['name']);
 <body>
 
 <?php if (isset($_POST['myfile'])): ?>
-    <a href="<?php $_SERVER['HTTP_REFERER'] ?>"><div>Назад</div></a>
-    <?php echo $result; ?>
     <h1>Информация:</h1>
     <pre>
         <?php print_r($_FILES); ?>
