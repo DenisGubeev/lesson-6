@@ -11,7 +11,7 @@ if (isset($_FILES['myfile'])) {
 }
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -38,7 +38,7 @@ if (isset($_FILES['myfile'])) {
         </fieldset>
     </form>
 
-    <div class="all-tests">
+    <div>
         <fieldset>
             <a href="list.php">Посмотреть все тесты >></a>
         </fieldset>
